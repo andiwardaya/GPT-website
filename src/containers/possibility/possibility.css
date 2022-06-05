@@ -1,0 +1,100 @@
+.gpt3__possibility{
+	display: flex;
+	gap: 16px;
+	padding: 4rem 6rem;
+}
+
+.gpt3__possibility-image{
+	flex: 1;
+}
+
+.gpt3__possibility-image img{
+	width: 100%;
+}
+
+
+.gpt3__possibility-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	margin-bottom: 3rem;
+
+	flex: 1;
+	gap: 0.8rem;
+	color: white;
+}
+
+.gpt3__possibility-content h1{
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 45px;
+}
+
+
+
+.gpt3__possibility-content p{
+	font-weight: 500;
+	color: var(--color-text);
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.gpt3__possibility-content h4:first-child{
+	color: #71e5ff;
+
+}
+
+.gpt3__possibility-content h4:last-child{
+	color: var(--color-subtext);
+}
+
+/*MEDIA QUERIIES*/
+
+@media screen and (max-width: 990px){
+
+	.gpt3__possibility-content{
+		margin-bottom: 0;
+	}
+
+ 	.gpt3__possibility-content h4, p{
+	font-size: 1rem;
+ 	}
+
+ 	.gpt3__possibility-content h1{
+ 		font-size: 1.6rem;
+ 	}
+}
+
+
+@media screen and (max-width: 819px) {
+	.gpt3__possibility{
+		flex-direction: column;
+		gap: 25px;
+		padding: 4rem 3rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.gpt3__possibility-content{
+		gap: 0.5rem;
+	}
+		.gpt3__possibility-content h1{
+ 		font-size: 1.8rem;
+ 		line-height: 35px;
+ 	}
+
+ 		.gpt3__possibility-content p{
+	font-size: 0.8rem;
+ 	}
+
+ 	.gpt3__possibility-content h4 {
+ 		font-size: 0.6rem;
+ 	}
+}
+
+/* buat layar 4k*/
+@media screen and (min-width: 1550px) {
+	.gpt3__possibility-content{
+		margin-bottom: 10rem;
+	}
+}
